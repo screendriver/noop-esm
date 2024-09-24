@@ -9,6 +9,7 @@ default:
 
 test:
 	npx just check-exports
+	npx mocha --config mocha.config.json
 
 build:
 	npx just compile
