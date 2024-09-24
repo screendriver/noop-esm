@@ -23,7 +23,8 @@
 		"node": ">=18"
 	},
 	"files": [
-		"distribution"
+		"distribution",
+		"!distribution/**/*.test.*"
 	],
 	"keywords": [
 		"noop",
