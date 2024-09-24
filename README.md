@@ -15,3 +15,11 @@ import { noop } from "noop-esm";
 
 noop();
 ```
+
+an asynchronous version is also available:
+
+```typescript
+import { asyncNoop } from "noop-esm";
+
+asyncNoop();
+```
