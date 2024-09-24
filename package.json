@@ -1,0 +1,36 @@
+{
+  "name": "noop-esm",
+  "version": "1.0.0",
+  "description": "A noop function exported as ECMAScript module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/screendriver/noop-esm.git"
+  },
+  "author": {
+    "name": "Christian Rackerseder",
+    "email": "github@echooff.de",
+    "url": "https://www.echooff.dev"
+  },
+  "type": "module",
+  "exports": {
+    "types": "./distribution/index.d.ts",
+    "default": "./distribution/index.js"
+  },
+  "main": "./distribution/index.js",
+  "types": "./distribution/index.d.ts",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "files": [
+    "distribution"
+  ],
+  "keywords": [
+    "noop",
+    "esm",
+    "nothingness"
+  ]
+}
