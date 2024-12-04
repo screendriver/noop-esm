@@ -36,7 +36,7 @@
 		"@types/mocha": "10.0.10",
 		"just-install": "2.0.2",
 		"mocha": "11.0.1",
-		"prettier": "3.4.1",
+		"prettier": "3.4.2",
 		"tsx": "4.19.2",
 		"typescript": "5.7.2"
 	}
