@@ -1,17 +1,13 @@
-import { suite, test } from "mocha";
+import test from "node:test";
 import assert from "node:assert";
-import { noop, asyncNoop } from "./index.js";
+import { noop, asyncNoop } from "./index.ts";
 
-suite("noop", function () {
-	test("should do absolutely nothing", function () {
-		assert(typeof noop === "function");
-		assert.strictEqual(noop(), undefined);
-	});
+test("noop should do absolutely nothing", function () {
+	assert(typeof noop === "function");
+	assert.strictEqual(noop(), undefined);
 });
 
-suite("asyncNoop", function () {
-	test("should do absolutely nothing", async function () {
-		assert(typeof asyncNoop === "function");
-		assert.strictEqual(await asyncNoop(), undefined);
-	});
+test("asyncNoop should do absolutely nothing", async function () {
+	assert(typeof asyncNoop === "function");
+	assert.strictEqual(await asyncNoop(), undefined);
 });
