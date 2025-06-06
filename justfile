@@ -7,9 +7,9 @@ default:
 @check-exports:
 	npx attw --pack . --ignore-rules=cjs-resolves-to-esm
 
-test:
+test: compile
 	npx just check-exports
-	npx mocha --config mocha.config.json
+	node --experimental-strip-types --test "source/**/*.test.ts"
 
 build:
 	npx just compile
