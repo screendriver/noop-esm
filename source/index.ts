@@ -1,3 +1,3 @@
-export function noop(..._args: any[]): void {}
+export function noop(..._args: unknown[]): void {}
 
-export async function asyncNoop(..._args: any[]): Promise<void> {}
+export async function asyncNoop(..._args: unknown[]): Promise<void> {}
